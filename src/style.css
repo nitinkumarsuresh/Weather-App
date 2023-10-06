@@ -1,0 +1,117 @@
+body{
+    background-image:url("../public/back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    margin-top: 2%;
+    width: 100%;
+}
+.weather{
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px auto;
+    text-align: center;
+    color:rgb(119, 36, 80);
+    background: linear-gradient(130deg, rgb(190, 194, 196),rgb(148, 194, 227),rgb(3, 112, 184));
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.search input{
+    border:none;
+    outline:0;
+    padding:12px 25px;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    margin-right: 12px;
+    width: 192px;
+}
+.search button{
+    border:none;
+    outline:0;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    cursor:pointer;
+
+}
+.search button img{
+    width:39px;
+}
+.winfo .icon{
+    margin-top: 8px;
+    width: 100px;
+    border-radius: 25px;
+}
+.winfo .icon1{
+    margin-top: 8px;
+    width: 100px;
+    height: 90px;
+    border-radius: 20px;
+}
+.winfo h1{
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.winfo h2{
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: -30px;
+}
+.details{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    margin-top: 20px;
+}
+.details.col{
+    display: flex;
+    align-items:center;
+    text-align: left;
+}
+.details.col img{
+    width: 45px;
+    margin-right: 10px;
+}
+.humidity.wind{
+    font-size: 27px;
+}
+.humidity.wind p{
+    margin: 0px;
+}
+.error{
+    color:rgb(235,169,169);
+    text-align: left;
+    margin-left: 10px;
+}
+@media screen and (min-width:340px) and (max-width:780px){
+    .container{
+        margin-top: 20%;
+        width: 100%;
+        height: 100vh;
+    }
+    .weather{
+    width: 240px;
+}
+.search input{
+    width: 140px;
+}
+.winfo .icon{
+    width: 80px;
+    height: 60px;
+}
+.winfo .icon1{
+    width: 80px;
+    height: 60px;
+}
+}
